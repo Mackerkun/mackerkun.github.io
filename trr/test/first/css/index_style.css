@@ -1,0 +1,42 @@
+.slider .slides li .caption {
+    width: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.35);
+    padding: 4px 50px;
+    margin: 0;
+}
+
+#reviews-slider .slides li .caption {
+    background: transparent;
+    position: relative;
+    text-align: right;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+#nearby .material-icons {
+    cursor: default;
+    color: #344a71;
+    padding-top: 20px;
+}
+
+#test-church {
+    font-size: 4rem;
+    padding-top: 20px;
+    width: 89px;
+    height: 76px;
+}
+
+.parallax-container {
+    height: 10%;
+}
+
+#reviews {
+    background: rgba(0, 0, 0, 0.35);
+}
+
+#reviews h4, #reviews .container {
+    color: white;
+}
