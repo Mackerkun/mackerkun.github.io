@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Two+Tone" rel="stylesheet">
+	<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+	<!-- Materialized compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<!-- Century gothic font -->
+	<link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+	<!-- Customized CSS -->
+	<link rel="stylesheet" href="css/index_style.css">
+	<link rel="stylesheet" href="css/template_style.css">
+	<title>About | Trani Rent Rooms</title>
+</head>
+
+<body>
+	<!-- Dropdown Structure -->
+	<ul id="suitesDropdown" class="dropdown-content">
+		<li><a href="#!">1 | Junior Suite</a></li>
+		<li><a href="#!">2 | Junior Suite</a></li>
+		<li><a href="#!">3 | Standard suite</a></li>
+		<li><a href="#!">4 | Junior Suite</a></li>
+		<li><a href="#!">5 | Suite Superior</a></li>
+	</ul>
+
+	<!-- Languages dropdowns -->
+	<div id="languageDropdownDesktop" class="dropdown-content">
+		<ul class="vertical-tabs col s6">
+			<li><a class="switch-language" id="language-ita" onclick="switchLanguage('language-ita')" href="#" style="font-weight: bolder"><img src="assets/img/flag/italy.png" alt="Italy flag" class="flag"><span  class="country">ITA</span></a></li>
+			<li><a class="switch-language" id="language-eng" onclick="switchLanguage('language-eng')" href="#" style="font-weight: bolder"><img src="assets/img/flag/uk.png" alt="UK flag" class="flag"><span  class="country">ENG</span></a></li>
+			<li><a class="switch-language" id="language-fra" onclick="switchLanguage('language-fra')" href="#" style="font-weight: bolder"><img src="assets/img/flag/france.png" alt="France flag" class="flag"><span  class="country">FRA</span></a></li>
+		</ul>
+	</div>
+	<div id="languageDropdownMobile" class="dropdown-content">
+		<ul class="vertical-tabs col s6">
+			<li><a class="switch-language" id="language-ita-mobile" onclick="switchLanguage('language-ita')" href="#" style="font-weight: bolder"><img src="assets/img/flag/italy.png" alt="Italy flag" class="flag"><span  class="country">ITA</span></a></li>
+			<li><a class="switch-language" id="language-eng-mobile" onclick="switchLanguage('language-eng')" href="#" style="font-weight: bolder"><img src="assets/img/flag/uk.png" alt="UK flag" class="flag"><span  class="country">ENG</span></a></li>
+			<li><a class="switch-language" id="language-fra-mobile" onclick="switchLanguage('language-fra')" href="#" style="font-weight: bolder"><img src="assets/img/flag/france.png" alt="France flag" class="flag"><span  class="country">FRA</span></a></li>
+		</ul>
+	</div>
+
+	<!-- Navbar -->
+	<nav id="navbar">
+		<div class="nav-wrapper">
+			<a href="index.html" class="brand-logo"><img src="assets/img/logo.png" height="60"
+					alt="Trani Rent Rooms Logo"></a>
+			<a href="#" data-target="sidenav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a href="index.html"><span>Home</span></a></li>
+				<li><a class="dropdown-trigger" href="suites.html" data-target="suitesDropdown"
+						id="suites-dropdown-activator">Suites</a></li>
+				<li class="active"><a href="#"><span id="language-navbar-who">Chi siamo</span></a></li>
+				<li><a href="tour.html"><span id="language-navbar-tour">Tour</span></a></li>
+				<li><a href="suggestions.html"><span id="language-navbar-suggestions">Consigli</span></a></li>
+				<li><a href="contacts.html"><span id="language-navbar-contacts">Contatti</span></a></li>
+				<li><a class="dropdown-trigger" href="#" data-target="languageDropdownDesktop"
+						id="language-desktop-dropdown-activator"><img src="assets/img/flag/italy.png" id="language-navbar-language" alt="Italy flag" class="flag" style="margin-top: -4px;"></a></li>
+			</ul>
+			<ul class="right hide-on-large-only">
+				<li><a class="dropdown-trigger sidenav-trigger" href="#" data-target="languageDropdownMobile"
+						id="language-mobile-dropdown-activator">
+						<i class="material-icons">language</i>
+					</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Sidenav - mobile and tablet -->
+	<ul id="sidenav" class="sidenav">
+		<li>
+			<div class="user-view">
+				<a href="#user"><img class="circle" src="assets/img/logo-without-text.png" height="100%" </a> <a
+						href="#name"><span class="white-text name">Trani Rent Rooms</span></a>
+				<a href="#email"><span class="white-text email">info@tranirentrooms.it</span></a>
+			</div>
+		</li>
+		<li><a class="sidenav-option" href="index.html">Home</a></li>
+		<li><a class="sidenav-option" href="services.html"><span id="language-sidenav-services">Pensati per te</span></a></li>
+		<li>
+			<a class="sidenav-option" href="suites.html">Suites</a>
+			<ul>
+				<li class="sublist">
+					<a href="#!">
+						<i class="material-icons">house</i>
+						Junior Suite
+					</a>
+				</li>
+				<li class="sublist">
+					<a href="#!">
+						<i class="material-icons">house</i>
+						Junior Suite
+					</a>
+				</li>
+				<li class="sublist">
+					<a href="#!">
+						<i class="material-icons">house</i>
+						Standard suite
+					</a>
+				</li>
+				<li class="sublist">
+					<a href="#!">
+						<i class="material-icons">house</i>
+						Junior Suite
+					</a>
+				</li>
+				<li class="sublist">
+					<a href="#!">
+						<i class="material-icons">house</i>
+						Superior Suite
+					</a>
+				</li>
+			</ul>
+		</li>
+		<li><a class="sidenav-option" href="about.html"><span id="language-sidenav-who">Chi siamo</span></a></li>
+		<li><a class="sidenav-option" href="#tour-section"><span id="language-sidenav-tour">Tour</span></a></li>
+		<li><a class="sidenav-option" href="suggestions.html"><span id="language-sidenav-suggestions">Consigli</span></a></li>
+		<li><a class="sidenav-option" href="contacts.html"><span id="language-sidenav-contacts">Contatti</span></a></li>
+	</ul>
+
+	<!-- Scroll to top button -->
+	<a href="#" class="btn" id="scrollToTopBtn" onclick="topFunction()"><i class="material-icons">map</i></a>
+
+	<!-- Welcome image -->
+	<img src="assets/img/contacts2.jpg" width="100%" alt="Bottle on the beach">
+
+	<!-- Main section -->
+	<div class="container" style="width: 90%;">
+		<div class="row">
+			<div class="col s12 m6">
+				<img src="assets/img/flavia_and_gianluca.jpg" width="100%" alt="" style="margin-top: 15%;">
+			</div>
+			<div class="col s12 m6">
+				<h4 class="center">Qualcosa di noi</h4>
+				<p class="description">
+					Trani Rent Rooms nasce nell’aprile 2017 all’insegna della più genuina conduzione famigliare. Gianluca e Flavia hanno studiato un’offerta pensata per i tuoi soggiorni a Trani, nel cuore della Puglia, che unisce ospitalità, qualità del servizio e una nuovissima location dal design fresco e moderno. <br> Gianluca è il vero cuore pulsante di Trani Rent Rooms. Con i suoi occhi azzurri ha visto sin da subito le potenzialità di un progetto giovane e pensato per far sentire ogni ospite come a casa propria. Oltre ad essere un host eccellente, sta completando il suo percorso accademico con una specializzazione in tecnologie alimentari. Il suo sogno nel cassetto è quello di poter includere nell’esperienza del soggiorno tranese un vero percorso culinario alla scoperta dei sapori della tradizione pugliese. <br> Flavia è la mente razionale di Trani Rent Rooms, il sorriso accogliente e la mano tesa a dare il benvenuto a ciascun ospite. Esercita la professione di avvocato presso il foro di Trani e questo le ha permesso di conoscere perfettamente la città antica ed i suoi segreti. Non esiterà, grazie alla sua spigliata capacità comunicativa, a consigliarTi bistrot eccellenti anche se nascosti all’occhio del turista! <br> Al momento del check-in, riceverai quindi un caloroso benvenuto nelle Terre di Puglia, con l’indicazione di punti di interesse, siti storici e percorsi eno-gastronomici alla scoperta del territorio locale.
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m6">
+				<h4 class="center">Perchè scegliere Trani Rent Rooms</h4>
+				<p class="description">
+					La struttura ricettiva consta di 6 smart-Rooms, spaziose, sapientemente arredate e provviste di ogni comfort (angolo cottura con piano a induzione, frigo, microonde, ampio bagno con doccia in ogni camera, servizio di climatizzazione/riscaldamento, Wi-Fi e TV LCD con predisposizione Smart Cam e USB). Ognuno dei 6 appartamenti è completamente indipendente con accesso da un’area reception comune, provvista di un piccolo punto ristoro con macchinetta del caffè e cialde aromatizzate sempre a disposizione. <br> Veri punti di forza di Trani Rent Rooms sono sia la disponibilità di 14 posti letto, che la rendono ideale per ospitare gruppi e famiglie e, sopratutto, la pulizia degli ambienti, curata nei dettagli e finanche nella scelta delle fragranze profumate degli ambienti che cambiano a seconda della stagione. Tutti i set letto sono scelti tra un’accurata selezione di materiali e tessuti pregiati e anallergici, preferendo sempre il cotone 100%. <br> La struttura, in un quartiere silenzioso e a pochi passi da bar, palestra, supermercato, unità ospedaliera locale e dalle spiagge sabbiose del litorale tranese, dista circa 30 minuti, a piedi, dalla splendida Cattedrale romanica, dal Castello Federiciano e dal Centro della Città.
+				</p>
+			</div>
+			<div class="col s12 m6">
+				<img src="assets/img/slideshow2.jpg" width="100%" alt="" style="margin-top: 15%;">
+			</div>
+		</div>
+	</div>
+
+	<!-- Check availability section-->
+	<div class="section" id="availabilitySection" style="background-color: #344a71;">
+		<div class="container">
+			<h4 class="center">
+				<i class="material-icons" style="padding-right: 1%; font-variant-caps: normal;">calendar_today</i>
+				<span id="language-check-availability" style="font-variant-caps: all-small-caps;">Verifica disponibilità</span>
+			</h4>
+			<div class="row">
+				<div class="col s6 m3">
+					<input placeholder="gg/mm/aaaa" class="datepicker" id="startingDate" type="text" class="validate">
+					<label for="startingDate">Check in</label>
+				</div>
+				<div class="col s6 m3">
+					<input placeholder="gg/mm/aaaa" class="datepicker" id="finalDate" type="text" class="validate">
+					<label for="finalDate">Check out</label>
+				</div>
+				<div class="col s6 m3">
+					<input placeholder="Adulti" id="people" type="number" class="validate" value="1">
+					<label id="language-availability-people" for="people">Adulti</label>
+				</div>
+				<div class="col s6 m3">
+					<input placeholder="Bambini" id="babies" type="number" class="validate" value="0">
+					<label id="language-availability-kids" for="babies">Bambini</label>
+				</div>
+			</div>
+			<div class="flexbox">
+				<a href="#!" class="col s3 waves-effect waves-light btn" id="bookAction"><span id="language-book-now">Prenota</span></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Maps iframe-->
+	<iframe id="maps-iframe"
+		src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d192193.7439536268!2d16.4607660026797!3d41.17757286224194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x1347ef757723e589%3A0xd0baa738e6f01b02!2sAeroporto%20Internazionale%20di%20Bari-Karol%20Wojtyla%2C%20Viale%20Enzo%20Ferrari%2C%20Bari%2C%20BA!3m2!1d41.137508!2d16.765202!4m5!1s0x13380418aff32a8b%3A0xe8ab3460d7ef9a6b!2sTrani%20Rent%20Rooms%2C%20Via%20Avvocato%20Enrico%20de%20Nicola%2C%2095%2C%2076125%20Trani%20BT!3m2!1d41.26566!2d16.433996!5e0!3m2!1sit!2sit!4v1575799786781!5m2!1sit!2sit"
+		width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+	<!-- Weather-->
+	<div id="weather">
+		<a class="weatherwidget-io" href="https://forecast7.com/it/41d2816d42/trani/" data-label_1="TRANI"
+			data-label_2="Meteo" data-theme="original" data-basecolor="#253552">TRANI Meteo</a>
+		<script>
+			! function (d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (!d.getElementById(id)) {
+					js = d.createElement(s);
+					js.id = id;
+					js.src = 'https://weatherwidget.io/js/widget.min.js';
+					fjs.parentNode.insertBefore(js, fjs);
+				}
+			}(document, 'script', 'weatherwidget-io-js');
+		</script>
+	</div>
+
+	<!-- Footer -->
+	<footer class="page-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col s12 l3 center hide-on-med-and-down">
+					<img src="assets/img/logo-without-text.png" alt="Trani Rent Rooms Logo" width="60%">
+				</div>
+				<div class="col s12 l3">
+					<h5 class="white-text hide-on-med-and-down">Contatti</h5>
+					<ul>
+						<li>
+							<a href="tel:+39 0883 89 75 06" class="grey-text text-lighten-3">
+								<i class="material-icons">phone</i>
+								<span>+39 0883 89 75 06</span>
+							</a>
+						</li>
+						<li>
+							<a href="tel:+39 347 268 4437" class="grey-text text-lighten-3">
+								<i class="material-icons">smartphone</i>
+								<span>+39 347 268 4437</span>
+							</a>
+						</li>
+						<li>
+							<a href="mailto:info@tranirentrooms.it" class="grey-text text-lighten-3">
+								<i class="material-icons">email</i>
+								<span>info@tranirentrooms.it</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://goo.gl/maps/HrMkBCsMah52" target="_blank" class="grey-text text-lighten-3">
+								<i class="material-icons">map</i>
+								<span>Via Avv. Enrico de Nicola, 95 | 76125 - Trani (BT) - IT</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col s12 l3 hide-on-med-and-down">
+					<h5 class="white-text">Link</h5>
+					<ul>
+						<li><a class="grey-text text-lighten-3" href="about.html">Chi siamo</a></li>
+						<li><a class="grey-text text-lighten-3" href="suites.html">Suites & tariffe</a></li>
+						<li><a class="grey-text text-lighten-3" href="tour.html">Tour Trani | Puglia</a></li>
+						<li><a class="grey-text text-lighten-3" href="contacts.html">Contatti</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Condizioni</a></li>
+					</ul>
+				</div>
+				<div class="row center hide-on-large-only" id="social-section">
+					<div class="col s2">
+						<a href="https://www.facebook.com/tranirentrooms/" target="_blank">
+							<img src="assets/img/social/facebook-logo.svg" alt="Facebook">
+						</a>
+					</div>
+					<div class="col s2">
+						<a href="https://www.instagram.com/tranirentrooms/" target="_blank">
+							<img src="assets/img/social/instagram-logo.svg" alt="Instagram">
+						</a>
+					</div>
+					<div class="col s2">
+						<a href="https://twitter.com/TraniRentRooms" target="_blank">
+							<img src="assets/img/social/twitter-logo.svg" alt="Twitter">
+						</a>
+					</div>
+					<div class="col s2">
+						<a href="https://m.me/tranirentrooms" target="_blank">
+							<img src="assets/img/social/messenger-logo.png" alt="Messenger">
+						</a>
+					</div>
+					<div class="col s2">
+						<a href="https://t.me/mackerkun" target="_blank">
+							<img src="assets/img/social/telegram-logo.png" alt="Telegram">
+						</a>
+					</div>
+					<div class="col s2">
+						<a href="https://wa.me/393930110010" target="_blank">
+							<img src="assets/img/social/whatsapp-logo.png" alt="WhatsApp">
+						</a>
+					</div>
+				</div>
+				<div class="col s12 m6 l3 push-m3">
+					<div class="row" style="margin-bottom: 0;">
+						<div class="col s4">
+							<p>
+								<a
+									href="https://www.tripadvisor.it/Hotel_Review-g608901-d12420484-Reviews-Trani_Rent_Rooms-Trani_Province_of_Barletta_Andria_Trani_Puglia.html">
+									<img src="assets/img/tripAdvisor.png" width="100%">
+								</a>
+							</p>
+						</div>
+						<div class="col s4">
+							<p>
+								<a href="https://www.booking.com/hotel/it/trani-rent-rooms.it.html">
+									<img src="assets/img/booking.png" width="100%">
+								</a>
+							</p>
+						</div>
+						<div class="col s4">
+							<p>
+								<a href="https://www.booking.com/hotel/it/trani-rent-rooms.it.html">
+									<img src="assets/img/google-my-business-logo.png" width="100%">
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© Copyright 2020 Trani Rent Rooms
+				<br>
+				P.Iva 07836940721 | CIS BT090017139
+				<a class="grey-text text-lighten-4 right" href="#!">Policy</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Now start with JS-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Materialize compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<!-- Customized JS -->
+	<script src="js/template.js"></script>
+	<script src="js/language.js"></script>
+	<!-- Specific JS -->
+	<script src="js/index.js"></script>
+</body>
+
+</html>
